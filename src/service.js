@@ -23,9 +23,10 @@ async function printCharacters(){
     <p>${character.name}<p/>
     <p>${character.house}<p/>
     <p>${character.age}<p/>
+    <button onclick="deleteCharacter(${character.id})">Eliminar<button/>
     <li/>
     `
-    })
+})
 }
 
 printCharacters()
@@ -39,8 +40,7 @@ async function deleteCharacter(id){
         },
         })
     const deletedCharacter = await response.json();
-    return deletedCharacter 
-     
+    return deletedCharacter    
 };
 
 // METHOD POST (create)

@@ -1,12 +1,6 @@
 {
   "character": [
     {
-      "id": "2",
-      "name": "Daenerys Targaryen",
-      "house": "Targaryen",
-      "age": "24"
-    },
-    {
       "id": "3",
       "name": "Tyrion Lannister",
       "house": "Lannister",

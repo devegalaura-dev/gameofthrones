@@ -31,9 +31,18 @@ async function printCharacters(){
 printCharacters()
 
 // METHOD DELETE (delete)
-async function deleteCharacter(){
-    
-}
+async function deleteCharacter(id){
+    const response = await fetch(`${URL_API}/${id}`, {
+            method: "DELETE",
+            headers: {
+            "Content-Type": "application/json"
+        },
+        })
+    const deletedCharacter = await response.json();
+    return deletedCharacter 
+     
+};
+
 // METHOD POST (create)
 async function createCharacter(){
 
